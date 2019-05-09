@@ -1,0 +1,12 @@
+in general:
+
+function positiveSum(arr) {
+   var initialValue=0
+   return arr.reduce((sumValue,currentValue)=> sumValue + (currentValue > 0 ? currentValue : 0),initialValue);
+}
+
+solution:
+
+function positiveSum(arr) {
+   return arr.reduce((a,b)=> a + (b > 0 ? b : 0),0);
+}
